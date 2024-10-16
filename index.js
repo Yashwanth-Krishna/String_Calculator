@@ -12,7 +12,8 @@ function addNumbers(input) {
 
         for (let each of checkPositiveOrNegative){
             if (Number(each) > 0) {
-                numArr.push(Number(each));
+                let num = Number(each) >= 1000 ? 0 : Number(each)
+                numArr.push(num);
             } else {
                 negativeNumbers.push(Number(each))
                 negativeCount++;
